@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111b28">
+  <meta name="description" content="Guía interactiva de Química y Biología para Educación Primaria UNC: tres unidades, tabla periódica, nomenclatura y ejercicios.">
+  <title>Laboratorio 940218 · Química y Biología UNC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio"><span class="brand-mark">✳</span><span><strong>LAB 940218</strong><small>QUÍMICA & BIOLOGÍA</small></span></a>
+      <p class="sidebar-caption">CUADERNO DE ESTUDIO</p>
+      <nav aria-label="Navegación principal">
+        <a class="nav-link active" href="#inicio" data-page="inicio"><span>⌂</span> Panorama</a>
+        <a class="nav-link" href="#unidad-1" data-page="unidad-1"><span>01</span> Materia y energía</a>
+        <a class="nav-link" href="#unidad-2" data-page="unidad-2"><span>02</span> Reacciones</a>
+        <a class="nav-link" href="#unidad-3" data-page="unidad-3"><span>03</span> Química orgánica</a>
+        <div class="nav-divider"></div>
+        <a class="nav-link" href="#tabla" data-page="tabla"><span>▦</span> Tabla periódica</a>
+        <a class="nav-link" href="#nomenclatura" data-page="nomenclatura"><span>◈</span> Nomenclatura</a>
+        <a class="nav-link" href="#practica" data-page="practica"><span>✎</span> Practica</a>
+      </nav>
+      <div class="side-bottom"><div class="pulse-dot"></div><span>Tu progreso se guarda en este navegador.</span></div>
+    </aside>
+    <div class="main-area">
+      <header class="topbar"><button class="menu-button" id="menuButton" aria-label="Abrir menú">☰</button><span class="breadcrumb">UNC <b>/</b> Educación Primaria <b>/</b> Química y Biología</span><span class="top-pill">2026 · II</span></header>
+      <main id="app" tabindex="-1"></main>
+      <footer class="footer"><span>Guía de estudio basada en el sílabo UNC 2026-II. Material de apoyo, no sustituye las clases.</span><span>Fuentes: <a href="https://pubchem.ncbi.nlm.nih.gov/periodic-table/" target="_blank" rel="noopener">PubChem</a> · <a href="https://iupac.org/what-we-do/nomenclature/brief-guides/" target="_blank" rel="noopener">IUPAC</a> · <a href="https://periodicbubbles.com/api/" target="_blank" rel="noopener">datos e imágenes</a></span></footer>
+    </div>
+  </div>
+  <div id="modalRoot"></div><div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
